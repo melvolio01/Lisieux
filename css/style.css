@@ -1,0 +1,77 @@
+   .homePage {
+    background-image: url(../images/photo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .aboutPage{
+    background-image: url(../images/photo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .servicesPage{
+    /*background-image: url(../images/photo3.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+  }
+
+  .contactPage{
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blue;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    width:100%;
+  }
+  li {
+    width:24.9%;
+    float:left;
+    border-right: 1px solid #eee;
+    list-style-type: none;
+  }
+  li:last-child {
+    border-right:none;
+  }
+  li a {
+    display: block;
+    width:80%;
+    background:#ddd;
+    padding:4% 10%;
+    font-size:1.35em;
+    text-decoration: none;
+    font-family: tahoma;
+    list-style-type: none;
+  }
+  @media screen and (max-width: 768px) {
+    #menu {
+      width:1.4em;
+      display: block;
+      background:#ddd;
+      font-size:1.35em;
+      text-align: center;
+    }
+    #nav.js {
+      display: none;
+    }
+    ul {
+      width:100%;
+    }
+    li {
+      width:100%;
+      border-right:none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #menu {
+      display: none;
+    }
+  }
+
