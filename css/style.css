@@ -6,10 +6,10 @@
 
   #welcomeBox {
     max-height: 300px;
-    max-width: 300px;
+    max-width: 550px;
     background-color: #fff;
     border: 1px solid-black;
-    padding: 20px 20px 20px 20px;
+    padding: 35px 35px 35px 35px;
     margin-left: 5vw;
     margin-top: 10vh;
     opacity: 0.7;
@@ -32,6 +32,7 @@
     padding: 40px 40px 40px 40px;
     opacity: 0.7;
     font-weight: bold;
+    margin-top: 0vh;
   }
 
   .servicesPage{
@@ -40,11 +41,55 @@
     background-size: cover;
   }
 
+  .services{
+    width: 100vw;
+    max-height: 400px;
+    background-color: #fff;
+    border: 1px solid-black;
+    padding: 40px 40px 40px 40px;
+    opacity: 0.7;
+    font-weight: bold;
+    margin-top: 0vh;
+  }
+
   .contactPage{
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: #fefdfb;
   }
 
+  #map{
+    width: 30vw;
+    height: 30vh;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    background-color:green;
+    border-radius: 10px;
+  }
 
+  .contactDeets{
+    width: 30vw;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-top: 5vh;
+
+  }
+
+ html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #e3f2fd;
+    opacity: 0.4;
+}
 
