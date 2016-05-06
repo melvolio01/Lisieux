@@ -8,7 +8,7 @@
     max-height: 300px;
     max-width: 550px;
     background-color: #fff;
-    border: 1px solid-black;
+    border: 1px solid #e3f2fd;
     padding: 35px 35px 35px 35px;
     margin-left: 5vw;
     margin-top: 10vh;
@@ -28,7 +28,7 @@
     width: 100vw;
     max-height: 400px;
     background-color: #fff;
-    border: 1px solid-black;
+    border: 1px solid #e3f2fd;
     padding: 40px 40px 40px 40px;
     opacity: 0.7;
     font-weight: bold;
@@ -45,7 +45,7 @@
     width: 100vw;
     max-height: 400px;
     background-color: #fff;
-    border: 1px solid-black;
+    border: 1px solid #e3f2fd;
     padding: 40px 40px 40px 40px;
     opacity: 0.7;
     font-weight: bold;
@@ -64,7 +64,7 @@
     min-width: 300px;
     margin: 0 auto;
     margin-top: 10vh;
-    background-color:green;
+    border: 0.5px solid #e3f2fd;
     border-radius: 10px;
   }
 
@@ -90,6 +90,10 @@ footer {
     height: 50px;
     width: 100%;
     background-color: #e3f2fd;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
+/*.twitter-follow-button{
+  margin-top: 2vh;
+  margin-left: 30vw;
+}*/
