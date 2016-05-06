@@ -4,74 +4,47 @@
     background-size: cover;
 }
 
+  #welcomeBox {
+    max-height: 300px;
+    max-width: 300px;
+    background-color: #fff;
+    border: 1px solid-black;
+    padding: 20px 20px 20px 20px;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    opacity: 0.7;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+
   .aboutPage{
     background-image: url(../images/photo3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .about{
+    width: 100vw;
+    max-height: 400px;
+    background-color: #fff;
+    border: 1px solid-black;
+    padding: 40px 40px 40px 40px;
+    opacity: 0.7;
+    font-weight: bold;
+  }
+
   .servicesPage{
-    /*background-image: url(../images/photo3.jpg);*/
+    background-image: url(../images/photo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: red;
   }
 
   .contactPage{
      background-repeat: no-repeat;
     background-size: cover;
-    background-color: blue;
+    background-color: #fefdfb;
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  ul {
-    width:100%;
-  }
-  li {
-    width:24.9%;
-    float:left;
-    border-right: 1px solid #eee;
-    list-style-type: none;
-  }
-  li:last-child {
-    border-right:none;
-  }
-  li a {
-    display: block;
-    width:80%;
-    background:#ddd;
-    padding:4% 10%;
-    font-size:1.35em;
-    text-decoration: none;
-    font-family: tahoma;
-    list-style-type: none;
-  }
-  @media screen and (max-width: 768px) {
-    #menu {
-      width:1.4em;
-      display: block;
-      background:#ddd;
-      font-size:1.35em;
-      text-align: center;
-    }
-    #nav.js {
-      display: none;
-    }
-    ul {
-      width:100%;
-    }
-    li {
-      width:100%;
-      border-right:none;
-    }
-  }
 
-  @media screen and (min-width: 768px) {
-    #menu {
-      display: none;
-    }
-  }
 
