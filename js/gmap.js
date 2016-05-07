@@ -1,13 +1,15 @@
-var venueMap;
-function init() {
 
-  var pinLocation = new google.maps.LatLng(53.097584,-6.915464);
+function init() {
+  var venueMap;
+
+  var pinLocation = new google.maps.LatLng(53.1420265,-6.8285954);
+  var myLatLng = pinLocation;
 
   var mapOptions = {
-    zoom: 11,
+    zoom: 12,
     center: pinLocation,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    panControl: false,
+    panControl: true,
     zoomControl: true,
     zoomControlOptions: {
       style: google.maps.ZoomControlStyle.SMALL,
@@ -27,68 +29,18 @@ function init() {
     streetViewControl: false,
     overviewMapControl: false,
 
-    styles: [
-      {
-        stylers: [
-          { hue: "#00ff6f" },
-          { saturation: -50 }
-        ]
-      }, {
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [
-          { lightness: 100 },
-          { visibility: "simplified" }
-        ]
-      }, {
-        featureType: "transit",
-        elementType: "geometry",
-        stylers: [
-          { hue: "#ff6600" },
-          { saturation: +80 }
-        ]
-      }, {
-        featureType: "transit",
-        elementType: "labels",
-        stylers: [
-          { hue: "#ff0066" },
-          { saturation: +80 }
-        ]
-      }, {
-        featureType: "poi",
-        elementType: "labels",
-        stylers: [
-          { visibility: "off" }
-        ]
-      }, {
-        featureType: "poi.park",
-        elementType: "labels",
-        stylers: [
-          { visibility: "on" }
-        ]
-      }, {
-        featureType: "water",
-        elementType: "geometry",
-        stylers: [
-          { hue: "#c4f4f4" }
-        ]
-      }, {
-        featureType: "road",
-        elementType: "labels",
-        stylers: [
-          { visibility: "off" }
-        ]
-      }
-    ]
+    styles: [{"featureType":"administrative","elementType":"labels.text","stylers":[{"color":"#f84243"},{"weight":"0.25"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#f84243"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text","stylers":[{"hue":"#ff0000"}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"},{"color":"#0d0000"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#6bb3a5"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#3986b8"},{"visibility":"on"}]}]
+
   };
 
   var venueMap = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-  var startPosition = new google.maps.Marker({    // Create a new marker
-    position: pinLocation,                        // Set its position
-    map: venueMap,                                // Specify the map
-    icon: "img/go.png"                            // Path to image from HTML
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: venueMap,
   });
+
+  
 
 }
 

@@ -85,13 +85,14 @@
   }
 
   #map{
-    width: 30vw;
-    height: 30vh;
+    width: 80vw;
+    height: 60vh;
     min-width: 300px;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 2vh;
     border: 0.5px solid #e3f2fd;
     border-radius: 10px;
+    
   }
 
   .contactDeets{
@@ -99,6 +100,7 @@
     min-width: 300px;
     margin: 0 auto;
     margin-top: 3vh;
+    
 
   }
 
